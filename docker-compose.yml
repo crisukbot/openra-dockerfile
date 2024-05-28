@@ -1,0 +1,10 @@
+services:
+  openra:
+    build:
+      context: . # or image: rmoriz/openra
+    ports:
+      - "1234:1234"
+    environment:
+      - NAME=docker_server
+      - MOD=ra
+      - LISTENPORT=1234
